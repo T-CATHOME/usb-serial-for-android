@@ -15,6 +15,7 @@ jobs:
         java-version: '17'
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+      
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
