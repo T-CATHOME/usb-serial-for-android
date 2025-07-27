@@ -15,3 +15,9 @@ jobs:
         java-version: '17'
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: application-jar
+        path: ./*
+        retention-days: 7
